@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="description" content="Summertask" />
+    <meta name="author" content="Kai" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Milkyway Weight Converter</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="index.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Audiowide&family=Tenor+Sans&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- header; description, title -->
+    <header>
+      <div class="container">
+        <div class="Hero" id="hero">
+          <h1>Milkyway Weight Converter</h1>
+          <h3>Find out how much you weigh on other celestial bodies!</h3>
+        </div>
+      </div>
+    </header>
+
+    <!-- section for main text, as well as converter with input and label -->
+    <section>
+      <!-- container div that defines the grid -->
+      <div class="container">
+        <!-- text for flair -->
+        <div class="text">
+          <p>
+            Have you ever wondered what you weigh elsewhere in our galaxy? I
+            sure have!<br />
+            So here is a converter that does exactly that! Find out what you
+            weigh from the sun and all the way to Pluto!
+          </p>
+        </div>
+        <!-- actual converter with input, label and paragraphs for the text -->
+        <div class="converter">
+          <label>Your weight</label><br />
+          <input
+            id="Kgs"
+            type="number"
+            placeholder="kgs"
+            oninput="kiloweightConvert(this.value)"
+            onchange="kiloweightConvert(this.value)"
+          />
+          <!-- Converter text -->
+          <p>The Sun: <span id="The-Sun"> kgs</span></p>
+          <p>Mercury: <span id="Mercury">kgs</span></p>
+          <p>Vernus: <span id="Venus">kgs</span></p>
+          <p>Earth: <span id="Earth">kgs</span></p>
+          <p>The Moon: <span id="The-Moon">kgs</span></p>
+          <p>Mars: <span id="Mars">kgs</span></p>
+          <p>Jupiter: <span id="Jupiter">kgs</span></p>
+          <p>Saturn: <span id="Saturn">kgs</span></p>
+          <p>Uranus: <span id="Uranus">kgs</span></p>
+          <p>Neptune: <span id="Neptune">kgs</span></p>
+          <p>Pluto: <span id="Pluto">kgs</span></p>
+        </div>
+      </div>
+    </section>
+    <!-- footer with general information, "bot" for bottom columns -->
+    <footer>
+      <div class="bot1">
+        <ul>
+          <p><b> Contact</b></p>
+          <li>email@email.com</li>
+          <li>LinkedIn</li>
+          <li>Phone: +47 998 87 766</li>
+        </ul>
+      </div>
+      <div class="bot2">
+        I would normally say that all the images used on this page were found on
+        <a href="unsplash.com">Unsplash</a>, but in this case, there's only one,
+        and it is by Alexander Andrews, and can be found
+        <a href="https://unsplash.com/photos/eNoeWZkO7Zc">here.</a>
+      </div>
+      <div class="bot3">
+        <p>None of the contacts are actual contacts.</p>
+      </div>
+    </footer>
+  </body>
+</html>
